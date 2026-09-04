@@ -1,0 +1,13 @@
+#Hero {
+background-color: brown;
+height: 80vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+/* Justify content position it vertically */
+justify-content: center;
+padding: 0 50px;
+}
+.card img {
+    height: 290px;
+} 

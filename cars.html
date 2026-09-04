@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cars — SAMREX MOTORS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 🧭 NAVBAR — Same on All Pages! -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="Home.html">SAMREX MOTORS</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navLinks">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cars.html">Our Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="mt-5">
+        <div class="position-relative overflow-hidden" style="background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #2c0000 100%); min-height: 320px;">
+            <!-- Decorative glow elements -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 opacity-25">
+                <div class="position-absolute top-0 start-0" style="width: 350px; height: 350px; background: #dc3545; border-radius: 50%; filter: blur(100px); transform: translate(-30%, -30%);"></div>
+                <div class="position-absolute bottom-0 end-0" style="width: 350px; height: 350px; background: #0d6efd; border-radius: 50%; filter: blur(100px); transform: translate(30%, 30%);"></div>
+            </div>
+            
+            <div class="container position-relative z-10 text-center py-5">
+                <span class="badge bg-danger bg-opacity-25 text-danger px-4 py-2 rounded-pill mb-4 fs-6 border border-danger border-opacity-25">✨ Premium Collection</span>
+                <h1 class="display-3 fw-bold text-white mb-3">
+                    DISCOVER YOUR <span class="text-danger">PERFECT RIDE</span>
+                </h1>
+                <p class="fs-5 text-white-50 mb-5 col-lg-8 mx-auto">
+                    Hand-picked luxury vehicles — quality inspected, fairly priced, ready for you.
+                </p>
+                <div class="d-flex justify-content-center gap-4 flex-wrap">
+                    <div class="text-center text-white">
+                        <h3 class="fw-bold text-danger mb-0">50+</h3>
+                        <p class="text-white-50 small mb-0">Available Cars</p>
+                    </div>
+                    <div class="vr text-white-25 d-none d-sm-block"></div>
+                    <div class="text-center text-white">
+                        <h3 class="fw-bold text-danger mb-0">100%</h3>
+                        <p class="text-white-50 small mb-0">Quality Checked</p>
+                    </div>
+                    <div class="vr text-white-25 d-none d-sm-block"></div>
+                    <div class="text-center text-white">
+                        <h3 class="fw-bold text-danger mb-0">Lagos</h3>
+                        <p class="text-white-50 small mb-0">Based in Nigeria</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom wave curve -->
+            <div class="position-absolute bottom-0 start-0 w-100">
+                <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 80L60 70C120 60 240 40 360 30C480 20 600 20 720 25C840 30 960 40 1080 45C1200 50 1320 50 1380 50L1440 50V80H1380C1320 80 1200 80 1080 80C960 80 840 80 720 80C600 80 480 80 360 80C240 80 120 80 60 80H0Z" fill="#ffffff"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🚗 FILTER BUTTONS — WORKING! ✅ -->
+    <section class="py-4 bg-white border-bottom shadow-sm">
+        <div class="container">
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button class="btn btn-dark filter-btn active" data-filter="all">All Cars</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🚙 CARDS GRID — Each Card Has a Category! ✅ -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="cars-grid">
+
+                <!-- 🚗 CAR 1 — SUV -->
+                <div class="col-md-6 col-lg-4 car-card" data-category="suv">
+                    <div class="card h-100 shadow">
+                        <img src="./images/Revuelto.webp" class="card-img-top" alt="SUV" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold fs-4">Revuelto</h5>
+                            <p class="card-text text-muted">Luxury electric SUV — spacious, powerful, eco-friendly.</p>
+                            <ul class="mb-3 text-muted small">
+                                <li>2024 — 5,000 km</li>
+                                <li>Electric — Automatic</li>
+                                <li>Full Self-Drive Ready</li>
+                            </ul>
+                            <p class="fw-bold text-primary fs-4 mt-auto">₦45,000,000</p>
+                            <a href="contact.html" class="btn btn-primary w-100 mt-2">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🚗 CAR 2 — Sedan -->
+                <div class="col-md-6 col-lg-4 car-card" data-category="sedan">
+                    <div class="card h-100 shadow">
+                        <img src="./images/Wagon.jpg" class="card-img-top" alt="Sedan" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold fs-4">G-Wagon</h5>
+                            <p class="card-text text-muted">Elegant, comfortable, high-performance luxury sedan.</p>
+                            <ul class="mb-3 text-muted small">
+                                <li>2023 — 12,000 km</li>
+                                <li>Petrol — Automatic</li>
+                                <li>Leather & Full Options</li>
+                            </ul>
+                            <p class="fw-bold text-primary fs-4 mt-auto">₦32,000,000</p>
+                            <a href="contact.html" class="btn btn-primary w-100 mt-2">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🚗 CAR 3 — Sports -->
+                <div class="col-md-6 col-lg-4 car-card" data-category="sports">
+                    <div class="card h-100 shadow">
+                        <img src="./images/S-Class.jpg" class="card-img-top" alt="Mercedes Benz S-Class" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold fs-4">Mercedes Benz S-Class</h5>
+                            <p class="card-text text-muted">Sleek, fast, head-turning sports car — pure excitement.</p>
+                            <ul class="mb-3 text-muted small">
+                                <li>2024 — 8,000 km</li>
+                                <li>Petrol — Automatic</li>
+                                <li>550 HP — 300 km/h</li>
+                            </ul>
+                            <p class="fw-bold text-primary fs-4 mt-auto">₦58,000,000</p>
+                            <a href="contact.html" class="btn btn-primary w-100 mt-2">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🚗 CAR 4 — Electric -->
+                <div class="col-md-6 col-lg-4 car-card" data-category="electric">
+                    <div class="card h-100 shadow">
+                        <img src="./images/C-Class.jpg" class="card-img-top" alt="Mercedes Benz C-Class" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold fs-4">Mercedes Benz C-Class</h5>
+                            <p class="card-text text-muted">Silent, smooth, zero-emission electric luxury.</p>
+                            <ul class="mb-3 text-muted small">
+                                <li>2024 — 3,000 km</li>
+                                <li>Electric — Automatic</li>
+                                <li>600km Range</li>
+                            </ul>
+                            <p class="fw-bold text-primary fs-4 mt-auto">₦52,000,000</p>
+                            <a href="contact.html" class="btn btn-primary w-100 mt-2">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                  <!-- 🚗 CAR 5— Electric -->
+                <div class="col-md-6 col-lg-4 car-card" data-category="electric">
+                    <div class="card h-100 shadow">
+                        <img src="./images/Lamborghini.jpg" class="card-img-top" alt="Lamborghini" style="height: 220px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold fs-4">Temerario-V8 Hybrid</h5>
+                            <p class="card-text text-muted">Silent, smooth, zero-emission electric luxury.</p>
+                            <ul class="mb-3 text-muted small">
+                                <li>2024 — 6,000 km</li>
+                                <li>Electric — Automatic</li>
+                                <li>900km Range</li>
+                            </ul>
+                            <p class="fw-bold text-primary fs-4 mt-auto">₦62,000,000</p>
+                            <a href="contact.html" class="btn btn-primary w-100 mt-2">Enquire Now</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⭐ CALL TO ACTION -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold display-5 mb-3">Don't See What You Want?</h2>
+            <p class="lead fs-5 mb-4">We can help you find the perfect car — just tell us what you need!</p>
+            <a href="contact.html" class="btn btn-danger btn-lg px-5">Request a Car</a>
+        </div>
+    </section>
+
+    <!-- 🦶 FOOTER -->
+    <footer class="bg-black text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 SAMREX MOTORS. All Rights Reserved.</p>
+            <p class="small text-muted">Lagos, Nigeria | Tel: +234 XXX XXX XXXX</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ✨ FILTER SCRIPT — Makes Buttons WORK! 🎯 -->
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const carCards = document.querySelectorAll('.car-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => {
+                    b.classList.remove('active', 'btn-dark');
+                    b.classList.add('btn-outline-dark');
+                });
+                btn.classList.add('active', 'btn-dark');
+                btn.classList.remove('btn-outline-dark');
+
+                const filterCategory = btn.getAttribute('data-filter');
+
+                carCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (filterCategory === 'all' || cardCategory === filterCategory) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
